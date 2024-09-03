@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"></parameter>
+  <parameter name="url" value="file:///C:/Users/mohin/git/repository/com.myntrajio/src/test/resources/WebPage/webpage.html"></parameter>
     <classes>
       <class name="com.myntrajio.RegisterTest.RegisterTest"/>
     </classes>

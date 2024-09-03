@@ -13,9 +13,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeSuite;
 
+import com.myntrajio.generic.common.Frameworkconstant;
+
 //import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class WebDriverLibrary {
+public class WebDriverLibrary implements Frameworkconstant {
 	 
 	 
 	public WebDriver driver;
@@ -78,8 +80,8 @@ public class WebDriverLibrary {
 	  * @retur
 	  * 
 	  */
-	 public void waitUntilElementFound(long time) {
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	 public void waitUntilElementFound() {
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(waitduration));
 	 }
 	 
 	 public void expliciWait(long time,WebElement element) {
